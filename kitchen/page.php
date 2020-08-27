@@ -23,4 +23,6 @@
 
 <?php get_template_part( 'parts/modal' ); ?>
 
+<?php get_template_part( 'parts/analytics' ); ?>
+
 <?php get_footer(); ?>

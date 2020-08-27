@@ -1,2 +1,2 @@
 
-<section class="bunner"></section>
+<section class="bunner" style="background-image: url(<?php the_field('bunner'); ?>);"></section>

@@ -1,56 +1,78 @@
 
+<?php 
+	function get_utm() 
+	{
+		$out = array();
+		$keys = array('yandex.direct', 'cpc', 'Brendy_Poisk|51006952', '8894513274', 'hi macs купить');
+		foreach ($keys as $row) {
+			if (!empty($_GET[$row])) {
+				$value = strval($_GET[$row]);
+				$value = stripslashes($value);
+				$value = htmlspecialchars_decode($value, ENT_QUOTES);	
+				$value = strip_tags($value); 		
+				$value = htmlspecialchars($value, ENT_QUOTES);	
+				$out[] = '<input type="hidden" name="' . $row . '" value="' . $value . '">';
+			}
+		}
+	
+		return implode("\r\n", $out);
+	}
+?>
 
 <div class="modal-consultation" id="modal-consultation">
 	<div class="modal modal-consultation__window">
-			<div class="modal-consultation__close" id="modal-consultation__close">
-					<i class="fas fa-times-circle"></i>
-					<p class="modal__closetext">
-							<span>Я не хочу </span> получить ответы
-							и подарки
-					</p>
-			</div>
-			<p class="modal__dont">
-					<span>Я не хочу </span> получить ответы <br>
+		<div class="modal-consultation__close" id="modal-consultation__close">
+			<i class="fas fa-times-circle"></i>
+			<p class="modal__closetext">
+					<span>Я не хочу </span> получить ответы
 					и подарки
 			</p>
-			<h2 class="modal-consultation__title">
-					<span>Бесплатная.</span><br>
-					онлайн-консультация
-					по любому вопросу
-			</h2>
-			<div class="modal-consultation__images">
-					<div class="modal-consultation__image">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/modal2.jpg" alt="">
-					</div>
-					<div class="modal-consultation__image">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/modal1.jpg" alt="">
-					</div>
-					<div class="modal-consultation__image">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/modal3.jpg" alt="">
-					</div>
+		</div>
+		<p class="modal__dont">
+			<span>Я не хочу </span> получить ответы <br>
+			и подарки
+		</p>
+		<h2 class="modal-consultation__title">
+			<span>Бесплатная.</span><br>
+			онлайн-консультация
+			по любому вопросу
+		</h2>
+		<div class="modal-consultation__images">
+			<div class="modal-consultation__image">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/modal2.jpg" alt="">
 			</div>
-			<div class="modal-consultation__down modal-consultation__down--small">
-					<p class="modal-consultation__text">
-							<span>Наш разговор ни к чему вас не обязывает.</span>  Мы вам оперативно перезвоним и 
-							ответим на любые вопросы. <br>
-							<br>
-							Например, сможем <span class="modal__orange">просчитать стоимость вашей кухни с точностью 100% </span>  или проконсультируем по выбору материалов и расскажем, на чем можно сэкономить без ущерба для качества.
+			<div class="modal-consultation__image">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/modal1.jpg" alt="">
+			</div>
+			<div class="modal-consultation__image">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/modal3.jpg" alt="">
+			</div>
+		</div>
+		<div class="modal-consultation__down modal-consultation__down--small">
+			<p class="modal-consultation__text">
+				<span>Наш разговор ни к чему вас не обязывает.</span>  Мы вам оперативно перезвоним и 
+				ответим на любые вопросы. <br>
+				<br>
+				Например, сможем <span class="modal__orange">просчитать стоимость вашей кухни с точностью 100% </span>  или проконсультируем по выбору материалов и расскажем, на чем можно сэкономить без ущерба для качества.
+			</p>
+			<form class="modal-consultation__form modal-consultation__form2">
+
+				<?php echo get_utm(); ?>
+
+				<input type="hidden" name="vidform" value="бесплатная консультация">
+				<input type="hidden" name="formname" value="Бесплатная консультация"><!-- ROISTAT -->
+				<input type="tel" name="phone" class="modal-consultation__input modal__phone"  placeholder="+7 (___) ___ __ __" required>
+				<input type="submit" class="modal-consultation__button modal-consultation__submit" value="Получить консультацию">
+				<div class="modal__agreement modal-consultation__agreement">
+					<label for="modal-consultation__check " class="modal-consultation__check--label modal-consultation__check--active">
+						<input type="checkbox" checked="checked" id="modal-consultation__check" class="modal-consultation__check">  
+					</label>
+					<p>
+						Я принимаю <a href="#"> условия пользовательского соглашения </a> и согласен на <a href="#"> обработку персональных данных </a>
 					</p>
-					<form class="modal-consultation__form modal-consultation__form2">
-							<input type="hidden" name="vidform" value="бесплатная консультация">
-							<input type="hidden" name="formname" value="Бесплатная консультация"><!-- ROISTAT -->
-							<input type="tel" name="phone" class="modal-consultation__input modal__phone"  placeholder="+7 (___) ___ __ __" required>
-							<input type="submit" class="modal-consultation__button modal-consultation__submit" value="Получить консультацию">
-							<div class="modal__agreement modal-consultation__agreement">
-									<label for="modal-consultation__check " class="modal-consultation__check--label modal-consultation__check--active">
-											<input type="checkbox" checked="checked" id="modal-consultation__check" class="modal-consultation__check">  
-									</label>
-									<p>
-											Я принимаю <a href="#"> условия пользовательского соглашения </a> и согласен на <a href="#"> обработку персональных данных </a>
-									</p>
-							</div>
-					</form>
-			</div>
+				</div>
+			</form>
+		</div>
 	</div>
 </div>
 
@@ -377,4 +399,6 @@
 			</p>
 	</div>
 </div>
+
+
 
