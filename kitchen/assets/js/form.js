@@ -5,7 +5,7 @@ $('form.modal-consultation__form2').submit(function (e) {
   $.post('form.php', form.serialize(), function (data) {
     $('#modal-consultation, #modal-order').hide();
     $('#modal-redirect1').show();
-    yaCounter28420846.reachGoal('consult_zayavka');
+    // yaCounter28420846.reachGoal('consult_zayavka');
     $('body').addClass('overflow-hidden');
       $('html').addClass('overflow-hidden');
       setTimeout(
@@ -23,7 +23,7 @@ $('form.modal-order__form').submit(function (e) {
   $.post('form.php', form.serialize(), function (data) {
     $('#modal-consultation, #modal-order').hide();
     $('#modal-redirect1').show();
-    yaCounter28420846.reachGoal('expert_zayavka');
+    // yaCounter28420846.reachGoal('expert_zayavka');
     $('body').addClass('overflow-hidden');
     $('html').addClass('overflow-hidden');
     setTimeout(
@@ -43,7 +43,7 @@ $('form.modal-download__form2').submit(function (e) {
     $('#modal-redirect2').show();
       $('body').addClass('overflow-hidden');
       $('html').addClass('overflow-hidden');
-      yaCounter28420846.reachGoal('kat_zayavka');
+      // yaCounter28420846.reachGoal('kat_zayavka');
     setTimeout(
         function()
         {
@@ -77,7 +77,7 @@ $('form.modal-free__form').submit(function (e) {
   $.post('form.php', form.serialize(), function (data) {
     $('#modal-consultation, #modal-free').hide();
     $('#modal-redirect1').show();
-    yaCounter28420846.reachGoal('hochu_zayavka');
+    // yaCounter28420846.reachGoal('hochu_zayavka');
     $('body').addClass('overflow-hidden');
     $('html').addClass('overflow-hidden');
     setTimeout(

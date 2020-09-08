@@ -1,24 +1,3 @@
-
-<?php 
-	function get_utm() 
-	{
-		$out = array();
-		$keys = array('yandex.direct', 'cpc', 'Brendy_Poisk|51006952', '8894513274', 'hi macs купить');
-		foreach ($keys as $row) {
-			if (!empty($_GET[$row])) {
-				$value = strval($_GET[$row]);
-				$value = stripslashes($value);
-				$value = htmlspecialchars_decode($value, ENT_QUOTES);	
-				$value = strip_tags($value); 		
-				$value = htmlspecialchars($value, ENT_QUOTES);	
-				$out[] = '<input type="hidden" name="' . $row . '" value="' . $value . '">';
-			}
-		}
-	
-		return implode("\r\n", $out);
-	}
-?>
-
 <div class="modal-consultation" id="modal-consultation">
 	<div class="modal modal-consultation__window">
 		<div class="modal-consultation__close" id="modal-consultation__close">
@@ -53,11 +32,10 @@
 				<span>Наш разговор ни к чему вас не обязывает.</span>  Мы вам оперативно перезвоним и 
 				ответим на любые вопросы. <br>
 				<br>
-				Например, сможем <span class="modal__orange">просчитать стоимость вашей кухни с точностью 100% </span>  или проконсультируем по выбору материалов и расскажем, на чем можно сэкономить без ущерба для качества.
+				Например, сможем <span class="modal__orange">стоимость вашего изделия с точностью 100% </span> 
+				или проконсультируем по выбору материалов и расскажем, на чем можно сэкономить без ущерба для качества.
 			</p>
 			<form class="modal-consultation__form modal-consultation__form2">
-
-				<?php echo get_utm(); ?>
 
 				<input type="hidden" name="vidform" value="бесплатная консультация">
 				<input type="hidden" name="formname" value="Бесплатная консультация"><!-- ROISTAT -->
@@ -189,8 +167,8 @@
 							<input type="tel" name="phone" class="modal-consultation__input modal__phone"  placeholder="+7 (___) ___ __ __" required>
 							<input type="submit" class="modal-consultation__button" value="Забираю всё бесплатно">
 							<div class="modal__agreement modal-consultation__agreement">
-									<label for="modal-free__check" class="modal-consultation__check--label modal-consultation__check--active">
-											<input type="checkbox" checked="checked" id="modal-free__check" class="modal-consultation__check">  
+									<label for="modal-free__check1" class="modal-consultation__check--label modal-consultation__check--active">
+											<input type="checkbox" checked="checked" id="modal-free__check1" class="modal-consultation__check">  
 									</label>
 									<p>
 											Я принимаю <a href="#"> условия пользовательского соглашения </a> и согласен на <a href="#"> обработку персональных данных </a>

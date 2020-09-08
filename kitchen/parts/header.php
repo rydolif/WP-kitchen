@@ -1,4 +1,6 @@
 
+<a name="main"></a>
+
 <header class="header">
 	<div class="container header__container--big">
 			<div class="row align-items-center">
@@ -22,7 +24,7 @@
 									</a>
 							</p>
 							<p class="header__phone header__consultation">
-									<a href="#" onclick="yaCounter28420846.reachGoal('consult_click'); return true;">
+									<a href="#" >
 											<?php the_field('header_consultation_text', 'option'); ?>
 									</a>
 							</p>
@@ -43,7 +45,7 @@
 									<span><?php the_field('statistics', 'option'); ?></span>
 							</p>
 							<p class="header__phone">
-									<a href="#" onclick="yaCounter28420846.reachGoal('consult_click'); return true;">
+									<a href="#" 
 										<?php the_field('header_consultation_text', 'option'); ?>
 									</a>
 							</p>

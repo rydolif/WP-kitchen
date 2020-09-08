@@ -346,11 +346,15 @@
 			margin-bottom: 0
 
 	li
+		margin-right: 40px
 
 		+r(576)
 			width: 100%
 			margin-right: 0
 			text-align: center
+
+		&:last-child
+			margin-right: 0
 
 	&__link
 		+r(1199)
@@ -388,7 +392,12 @@
 		&__form
 			margin: 0 auto
 
+.modal-exit
+	.modal-download__subtitle span,
+	&__text span
+		color: #c36
 
-
+.modal-download__btn
+	background-color: #c36
 
 @import "page"
