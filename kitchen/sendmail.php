@@ -1,11 +1,11 @@
 <?php
-	$SITE_TITLE = 'Mossman';
+	$SITE_TITLE = 'Kitchen';
 	$SITE_DESCR = '';
 
 	if ( isset($_POST) ) {
 
-		// $to = 'info@mossman-kuhni.ru';
-		$to = 'rudolifrudolif@gmail.com';
+		// $to = 'flexdesign.sales@gmail.com, rudolifrudolif@gmail.com';
+		$to = 'zakaz@optima-st.ru, internet-mebel@cvt.ru, reception@cvt.ru';
 
 		$subject = $_POST['subject'] ? htmlspecialchars(trim($_POST['subject'])) : '';
 		$description = $_POST['description'] ? htmlspecialchars(trim($_POST['description'])) : '';
@@ -78,14 +78,6 @@
 
 		$message = "<div style='background:#ccc;border-radius:10px;padding:20px;'>
 				".$data."
-				<br>\n
-				<hr>\n
-				<br>\n
-				<p><b>Если Вам понадобиться консультация, обращайтесь:</b></p>
-				<p>Торговая сеть «MOSSMAN» </p>
-				<p>Телефон: <a href='tel:+74953695577' style='color: #000;'>+7 (495) 369-55-77</a> </p>
-				<p>E-mail: <a href='mailto:info@mossman-kuhni.ru' style='color: #000;'>info@mossman-kuhni.ru</a></p>
-				<p><a href='www.mossman-kuhni.ru' style='color: #000; target='_blank'>www.mossman-kuhni.ru</a></p>
 				<br>\n
 				<hr>\n
 				<br>\n

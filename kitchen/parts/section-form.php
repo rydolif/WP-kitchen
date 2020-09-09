@@ -1,21 +1,31 @@
 
 <section class="section-form">
-	<form class="container section-form__container">
-			<input type="hidden" name="formname" value="Калькулятор"><!-- ROISTAT -->
+	<div class="container ">
+
+		<form action="" class="form section-form__container">
+
+			<input type="hidden" name="subject" value="Форма контактов">
+
+			<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
+			<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
+			<input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>">
+			<input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>">
+			<input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
 
 			<div class="section-form__block">
-				<label for="section-name">Имя</label>
-				<input type="text" name="section-name" id="section-name" required>
+				<label for="">Имя</label>
+				<input type="text" name="name" required>
 			</div>
 
 			<div class="section-form__block">
-				<label for="section-phone">Телефон</label>
-				<input type="tel" name="phone" id="phone" class="modal__phone" placeholder="+7 (___) ___ __ __" required>
+				<label for="">Телефон</label>
+				<input type="tel" name="phone"class="modal__phone" placeholder="+7 (___) ___ __ __" required>
 			</div>
 
 			<div class="section-form__block">
-				<input type="submit" class="section-form__btn" value="Зафиксировать условия">
+				<button class="section-form__btn">Зафиксировать условия</button>
 			</div>
+		</form>
 
-	</form>
+	</div>
 </section>

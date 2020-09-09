@@ -255,6 +255,7 @@
 		align-items: flex-end
 
 	&__block
+		position: relative
 		display: flex
 		flex-direction: column
 		width: 31%
@@ -290,11 +291,13 @@
 				width: 100%
 				margin-top: 0
 
-
 	&__btn
 		@extend .calc__button
 		color: #ffffff !important
-		// margin-top: 20px
+		height: 60px
+		border-radius: 60px
+		border: 0
+
 
 .contacts
 	&__title
@@ -399,5 +402,38 @@
 
 .modal-download__btn
 	background-color: #c36
+
+.modal-redirect__big-text span,
+.modal-redirect__small-text a
+	color: #c36
+
+
+
+label.error
+	position: absolute
+	bottom: -25px
+	right: 25px
+	left: 25px
+	transition: all .3s
+	animation: error .3s linear 1 forwards
+	color: #fff
+	text-align: center
+	font-weight: 600
+	background-color: red
+	border-radius: 10px
+	z-index: 1
+
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: -4px
+		transform: translate(-50%, -50%)
+		border-bottom: 4px solid red
+		border-left: 4px solid transparent
+		border-right: 4px solid transparent
+		border-top: 4px solid transparent
+
+
 
 @import "page"

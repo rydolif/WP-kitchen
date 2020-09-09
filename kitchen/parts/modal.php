@@ -37,6 +37,14 @@
 			</p>
 			<form class="modal-consultation__form modal-consultation__form2">
 
+				<input type="hidden" name="subject" value="Заявка на консультацию с лендинга optima-st.ru">
+
+				<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
+				<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
+				<input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>">
+				<input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>">
+				<input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
+
 				<input type="hidden" name="vidform" value="бесплатная консультация">
 				<input type="hidden" name="formname" value="Бесплатная консультация"><!-- ROISTAT -->
 				<input type="tel" name="phone" class="modal-consultation__input modal__phone"  placeholder="+7 (___) ___ __ __" required>
@@ -98,10 +106,19 @@
 			<div class="col-lg-6 relative">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/modal-catalog.png" alt="" class="modal-download__catalog">
 					<form class="modal-download__form modal-download__form2">
-							<input type="hidden" name="vidform" value="скачать каталог">
-							<input type="hidden" name="formname" value="Скачать каталог"><!-- ROISTAT --> 
-							<input type="email" name="email" class="modal-download__email" placeholder="e-mail*" required>
-							<input type="submit" class="modal-download__btn" id="modal-download__btn" value="Получить на почту">
+
+						<input type="hidden" name="subject" value="Заявка на консультацию с лендинга optima-st.ru">
+
+						<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
+						<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
+						<input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>">
+						<input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>">
+						<input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
+
+						<input type="hidden" name="vidform" value="скачать каталог">
+						<input type="hidden" name="formname" value="Скачать каталог"><!-- ROISTAT --> 
+						<input type="email" name="email" class="modal-download__email" placeholder="e-mail*" required>
+						<input type="submit" class="modal-download__btn" id="modal-download__btn" value="Получить на почту">
 					</form> 
 					<div class="modal-download__social">
 							<a href="#" class="modal-download__viber">
@@ -150,31 +167,40 @@
 					</div>
 			</div>
 			<div class="modal-consultation__down modal-free__down relative">
-					<div class="modal-free__card">
-							<a href="#" target="_blank" class="modal-free__link">
-									<div class="modal-free__icon">
-											<img src="<?php echo get_template_directory_uri(); ?>/assets/img/watch__white.png" alt="">
-									</div>
-									<p>
-									"Узнайте 5 фатальных ошибок при выборе кухни"
-									</p>
-							</a>
-							<p class="modal-free__subtext">Доступ к уникальному pdf-документу «5 фатальных ошибок при выборе кухни» откроется сразу после нажатия на кнопку «Забираю все бесплатно»
+				<div class="modal-free__card">
+					<a href="#" target="_blank" class="modal-free__link">
+							<div class="modal-free__icon">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/watch__white.png" alt="">
+							</div>
+							<p>
+							"Узнайте 5 фатальных ошибок при выборе кухни"
+							</p>
+					</a>
+					<p class="modal-free__subtext">Доступ к уникальному pdf-документу «5 фатальных ошибок при выборе кухни» откроется сразу после нажатия на кнопку «Забираю все бесплатно»
+					</p>
+				</div>
+				<form class="modal-consultation__form modal-free__form">
+
+					<input type="hidden" name="subject" value="Расчет с лендинга optima-st.ru">
+
+					<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
+					<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
+					<input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>">
+					<input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>">
+					<input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
+
+					<input type="hidden" name="formname" value="Калькулятор"><!-- ROISTAT -->
+					<input type="tel" name="phone" class="modal-consultation__input modal__phone"  placeholder="+7 (___) ___ __ __" required>
+					<input type="submit" class="modal-consultation__button" value="Забираю всё бесплатно">
+					<div class="modal__agreement modal-consultation__agreement">
+							<label for="modal-free__check1" class="modal-consultation__check--label modal-consultation__check--active">
+									<input type="checkbox" checked="checked" id="modal-free__check1" class="modal-consultation__check">  
+							</label>
+							<p>
+									Я принимаю <a href="#"> условия пользовательского соглашения </a> и согласен на <a href="#"> обработку персональных данных </a>
 							</p>
 					</div>
-					<form class="modal-consultation__form modal-free__form">
-						<input type="hidden" name="formname" value="Калькулятор"><!-- ROISTAT -->
-							<input type="tel" name="phone" class="modal-consultation__input modal__phone"  placeholder="+7 (___) ___ __ __" required>
-							<input type="submit" class="modal-consultation__button" value="Забираю всё бесплатно">
-							<div class="modal__agreement modal-consultation__agreement">
-									<label for="modal-free__check1" class="modal-consultation__check--label modal-consultation__check--active">
-											<input type="checkbox" checked="checked" id="modal-free__check1" class="modal-consultation__check">  
-									</label>
-									<p>
-											Я принимаю <a href="#"> условия пользовательского соглашения </a> и согласен на <a href="#"> обработку персональных данных </a>
-									</p>
-							</div>
-					</form>
+				</form>
 			</div>
 	</div>
 </div>
@@ -205,37 +231,46 @@
 			</p>
 			<p class="modal-order__smalltext">Это вас не обязывает заказывать кухню у нас</p>
 			<div class="modal-consultation__down modal-free__down modal-order__down">
-					<div class="modal-free__card modal-order__card">
-							<a href="#" target="_blank" class="modal-free__link">
-									<div class="modal-free__icon">
-											<img src="<?php echo get_template_directory_uri(); ?>/assets/img/watch__white.png" alt="">
-									</div>
-									<p>
-									"Как сэкономить десятки тысяч <br>
-									рублей при выборе кухни и ее <br>
-									изготовителя?" 
-									</p>
-							</a>
-							<p class="modal-free__subtext">
-									Доступ к видео-инструкции и чек-листу <br>
-									откроется сразу <span> после нажатия  <br>
-									на кнопку.</span>
+				<div class="modal-free__card modal-order__card">
+					<a href="#" target="_blank" class="modal-free__link">
+							<div class="modal-free__icon">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/watch__white.png" alt="">
+							</div>
+							<p>
+							"Как сэкономить десятки тысяч <br>
+							рублей при выборе кухни и ее <br>
+							изготовителя?" 
+							</p>
+					</a>
+					<p class="modal-free__subtext">
+							Доступ к видео-инструкции и чек-листу <br>
+							откроется сразу <span> после нажатия  <br>
+							на кнопку.</span>
+					</p>
+				</div>
+				<form class="modal-consultation__form modal-order__form">
+
+					<input type="hidden" name="subject" value="Заявка на консультацию с лендинга optima-st.ru">
+
+					<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
+					<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
+					<input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>">
+					<input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>">
+					<input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
+
+					<input type="hidden" name="vidform" value="инженерная экспертиза">
+					<input type="hidden" name="formname" value="Инженерная экспертиза"><!-- ROISTAT -->
+					<input type="tel" class="modal-consultation__input modal-order__input modal__phone" id="order__phone" name="phone" placeholder="+7 (___) ___ __ __" required>
+					<button class="modal-consultation__button modal-order__button" id="modal-order__submit">Заказать бесплатную экспертизу <br> и сэкономить до 100 000 руб.</button>
+					<div class="modal__agreement modal-consultation__agreement">
+							<label for="modal-free__check" class="modal-consultation__check--label modal-consultation__check--active">
+									<input type="checkbox" checked="checked" id="modal-free__check" class="modal-consultation__check">  
+							</label>
+							<p>
+									Я принимаю <a href="#"> условия пользовательского соглашения </a> и согласен на <a href="#"> обработку персональных данных </a>
 							</p>
 					</div>
-					<form class="modal-consultation__form modal-order__form">
-							<input type="hidden" name="vidform" value="инженерная экспертиза">
-							<input type="hidden" name="formname" value="Инженерная экспертиза"><!-- ROISTAT -->
-							<input type="tel" class="modal-consultation__input modal-order__input modal__phone" id="order__phone" name="phone" placeholder="+7 (___) ___ __ __" required>
-							<button class="modal-consultation__button modal-order__button" id="modal-order__submit">Заказать бесплатную экспертизу <br> и сэкономить до 100 000 руб.</button>
-							<div class="modal__agreement modal-consultation__agreement">
-									<label for="modal-free__check" class="modal-consultation__check--label modal-consultation__check--active">
-											<input type="checkbox" checked="checked" id="modal-free__check" class="modal-consultation__check">  
-									</label>
-									<p>
-											Я принимаю <a href="#"> условия пользовательского соглашения </a> и согласен на <a href="#"> обработку персональных данных </a>
-									</p>
-							</div>
-					</form>
+				</form>
 			</div>
 	</div>
 </div>
@@ -243,69 +278,78 @@
 <div class="modal-download modal-exit relative" id="modal-exit">
 	<div class="modal modal-download__window">
 			<div class="modal-consultation__close modal-download__close" id="modal-exit__close">
-					<i class="fas fa-times-circle"></i>
-					<p class="modal__closetext">
-							<span>Я отказываюсь </span> от полезного <br>
-							материала и 100 000 руб.
-					</p>
+				<i class="fas fa-times-circle"></i>
+				<p class="modal__closetext">
+						<span>Я отказываюсь </span> от полезного <br>
+						материала и 100 000 руб.
+				</p>
 			</div>
 			<div class="col-lf-12 col-xl-7">
-					<h2 class="modal-consultation__title">
-							ОСТАНЬТЕСЬ ВСЕГО <br> НА МИНУТКУ...
-					</h2>
-					<p class="modal-consultation__subtitle modal-download__subtitle">
-							и мы бесплатно отправим вам <br>
-							<span>уникальный pdf-документ</span>
+				<h2 class="modal-consultation__title">
+						ОСТАНЬТЕСЬ ВСЕГО <br> НА МИНУТКУ...
+				</h2>
+				<p class="modal-consultation__subtitle modal-download__subtitle">
+						и мы бесплатно отправим вам <br>
+						<span>уникальный pdf-документ</span>
+				</p>
+				<div class="modal-exit__grid">
+					<p class="modal-exit__text">
+							«5 фатальных ошибок при выборе кухни»
 					</p>
-					<div class="modal-exit__grid">
-							<p class="modal-exit__text">
-									«5 фатальных ошибок при выборе кухни»
-							</p>
-							<div class="modal-exit__mac">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/modal-mac.png" alt="">
-							</div>
-							<div class="modal-exit__clip">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/modal-exit-clip.png" alt="">
-							</div>
-							<p class="modal-exit__text modal-exit__text2">
-									И подарим <span> 100 000 руб. </span> на шкафы купе
-									
-							</p>
+					<div class="modal-exit__mac">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/modal-mac.png" alt="">
 					</div>
+					<div class="modal-exit__clip">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/modal-exit-clip.png" alt="">
+					</div>
+					<p class="modal-exit__text modal-exit__text2">
+							И подарим <span> 100 000 руб. </span> на шкафы купе
+							
+					</p>
+				</div>
 			</div>
 			<div class="col-lg-12 col-xl-5 relative">
-					<p class="modal-consultation__text modal-exit__lighttext">
-							Отправим на почту <br>
-							<br>
-							<br>
-							Листайте с удовольствием <br>
-								на компьютере или телефоне.
+				<p class="modal-consultation__text modal-exit__lighttext">
+						Отправим на почту <br>
+						<br>
+						<br>
+						Листайте с удовольствием <br>
+							на компьютере или телефоне.
+				</p>
+				<form class="modal-download__form modal-exit__form">
+
+					<input type="hidden" name="subject" value="Заявка на консультацию с лендинга optima-st.ru">
+
+					<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
+					<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
+					<input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>">
+					<input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>">
+					<input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
+
+					<input type="hidden" name="vidform" value="окно ухода с сайта">
+					<input type="hidden" name="formname" value="Останьтесь на минутку"><!-- ROISTAT -->
+					<input type="email" name="email" class="modal-download__email" placeholder="e-mail*" required>
+					<input type="submit" class="modal-download__btn" id="modal-exit__submit" value="Получить на почту">
+				</form>
+				<div class="modal__agreement modal-consultation__agreement modal-download__agreement">
+					<label for="modal-download__check " class="modal-consultation__check--label modal-consultation__check--active">
+							<input type="checkbox" checked="checked" id="modal-download__check" class="modal-consultation__check">  
+					</label>
+					<p>
+							Я принимаю <a href="#"> условия пользовательского соглашения </a> и согласен на <a href="#"> обработку персональных данных </a>
 					</p>
-					<form class="modal-download__form modal-exit__form">
-							<input type="hidden" name="vidform" value="окно ухода с сайта">
-							<input type="hidden" name="formname" value="Останьтесь на минутку"><!-- ROISTAT -->
-							<input type="email" name="email" class="modal-download__email" placeholder="e-mail*" required>
-							<input type="submit" class="modal-download__btn" id="modal-exit__submit" value="Получить на почту">
-					</form>
-					<div class="modal__agreement modal-consultation__agreement modal-download__agreement">
-							<label for="modal-download__check " class="modal-consultation__check--label modal-consultation__check--active">
-									<input type="checkbox" checked="checked" id="modal-download__check" class="modal-consultation__check">  
-							</label>
-							<p>
-									Я принимаю <a href="#"> условия пользовательского соглашения </a> и согласен на <a href="#"> обработку персональных данных </a>
-							</p>
-					</div>
-					<div class="modal-download__social">
-							<a href="#" class="modal-download__viber">
-									<i class="fab fa-viber"></i>
-							</a>
-							<a href="#" class="modal-download__whatsapp">
-									<i class="fab fa-whatsapp-square"></i>
-							</a>
-							<a href="#" class="modal-download__telegramm">
-									<i class="fab fa-telegram-plane "></i>
-							</a>
-					</div>
+				</div>
+				<div class="modal-download__social">
+					<a href="#" class="modal-download__viber">
+							<i class="fab fa-viber"></i>
+					</a>
+					<a href="#" class="modal-download__whatsapp">
+							<i class="fab fa-whatsapp-square"></i>
+					</a>
+					<a href="#" class="modal-download__telegramm">
+							<i class="fab fa-telegram-plane "></i>
+					</a>
+				</div>
 			</div>
 	</div>
 </div>
@@ -326,7 +370,7 @@
 			<p class="modal-redirect__small-text">
 					Через 5 секунд вы автоматически будете перенаправлены на наш специальный раздел с уже 
 					выполненными проектами. <br>
-					<a href="https://optima-st.ru/our-work/stoleshnicy/">www.kuhnicity.ru/portfolio</a> <br>
+					<a href="https://optima-st.ru/our-work/stoleshnicy/">www.optima-st.ru/our-work/stoleshnicy</a> <br>
 					<br>
 					Хорошего дня!
 			</p>
@@ -348,7 +392,7 @@
 			</p>
 			<p class="modal-redirect__small-text">
 					А пока полистайте  этот сайт или специальный раздел с уже выполненными проектами. <br>
-					<a href="https://www.kuhnicity.ru/portfolio/">www.kuhnicity.ru/portfolio</a> <br>
+					<a href="https://optima-st.ru/our-work/stoleshnicy">www.optima-st.ru/our-work/stoleshnicy</a> <br>
 					<br>
 					Хорошего дня!
 			</p>
@@ -371,7 +415,7 @@
 			</p>
 			<p class="modal-redirect__small-text">
 					Через 5 секунд вы автоматически будете перенаправлены на наш специальный раздел с уже выполненными проектами. <br>
-					<a href="https://www.kuhnicity.ru/portfolio/">www.kuhnicity.ru/portfolio</a> <br>
+					<a href="https://optima-st.ru/our-work/stoleshnicy">www.optima-st.ru/our-work/stoleshnicy</a> <br>
 					<br>
 					Хорошего дня!
 			</p>

@@ -2,7 +2,7 @@ $('form.modal-consultation__form2').submit(function (e) {
   e.preventDefault();
   var form = $(this), button = $(this).find('.modal-consultation__submit'), thanks = $(this).siblings('.thankBlock');
 
-  $.post('form.php', form.serialize(), function (data) {
+  $.post('wp-content/themes/kitchen/sendmail.php', form.serialize(), function (data) {
     $('#modal-consultation, #modal-order').hide();
     $('#modal-redirect1').show();
     // yaCounter28420846.reachGoal('consult_zayavka');
@@ -11,7 +11,7 @@ $('form.modal-consultation__form2').submit(function (e) {
       setTimeout(
         function()
         {
-         window.open('https://www.kuhnicity.ru/portfolio/', '_blank');
+         window.open('https://optima-st.ru/our-work/stoleshnicy', '_blank');
         }, 5000)
   });
 });
@@ -20,7 +20,7 @@ $('form.modal-order__form').submit(function (e) {
   e.preventDefault();
   var form = $(this), button = $(this).find('.modal-consultation__submit'), thanks = $(this).siblings('.thankBlock');
 
-  $.post('form.php', form.serialize(), function (data) {
+  $.post('wp-content/themes/kitchen/sendmail.php', form.serialize(), function (data) {
     $('#modal-consultation, #modal-order').hide();
     $('#modal-redirect1').show();
     // yaCounter28420846.reachGoal('expert_zayavka');
@@ -29,7 +29,7 @@ $('form.modal-order__form').submit(function (e) {
     setTimeout(
         function()
         {
-          window.open('https://www.kuhnicity.ru/portfolio/', '_blank');
+          window.open('https://optima-st.ru/our-work/stoleshnicy', '_blank');
         }, 5000)
   });
 });
@@ -38,7 +38,7 @@ $('form.modal-download__form2').submit(function (e) {
   e.preventDefault();
   var form = $(this), button = $(this).find('.modal-consultation__submit');
 
-  $.post('form.php', form.serialize(), function (data) {
+  $.post('wp-content/themes/kitchen/sendmail.php', form.serialize(), function (data) {
     $('#modal-exit, #modal-download').hide();
     $('#modal-redirect2').show();
       $('body').addClass('overflow-hidden');
@@ -56,7 +56,7 @@ $('form.modal-exit__form').submit(function (e) {
   e.preventDefault();
   var form = $(this), button = $(this).find('.modal-consultation__submit');
 
-  $.post('form.php', form.serialize(), function (data) {
+  $.post('wp-content/themes/kitchen/sendmail.php', form.serialize(), function (data) {
     $('#modal-exit, #modal-download').hide();
     $('#modal-redirect3').show();
     $('body').addClass('overflow-hidden');
@@ -74,7 +74,7 @@ $('form.modal-free__form').submit(function (e) {
   e.preventDefault();
   var form = $(this), button = $(this).find('.modal-consultation__submit'), thanks = $(this).siblings('.thankBlock');
 
-  $.post('form.php', form.serialize(), function (data) {
+  $.post('wp-content/themes/kitchen/sendmail.php', form.serialize(), function (data) {
     $('#modal-consultation, #modal-free').hide();
     $('#modal-redirect1').show();
     // yaCounter28420846.reachGoal('hochu_zayavka');
@@ -83,7 +83,7 @@ $('form.modal-free__form').submit(function (e) {
     setTimeout(
         function()
         {
-          window.open('https://www.kuhnicity.ru/portfolio/', '_blank');
+          window.open('https://optima-st.ru/our-work/stoleshnicy', '_blank');
         }, 5000)
   });
 });
