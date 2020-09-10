@@ -87,3 +87,21 @@ $('form.modal-free__form').submit(function (e) {
         }, 5000)
   });
 });
+
+$('form.section-form__container').submit(function (e) {
+  e.preventDefault();
+  var form = $(this), button = $(this).find('.modal-consultation__submit'), thanks = $(this).siblings('.thankBlock');
+
+  $.post('wp-content/themes/kitchen/sendmail.php', form.serialize(), function (data) {
+    $('#modal-consultation, #modal-order').hide();
+    $('#modal-redirect1').show();
+    // yaCounter28420846.reachGoal('consult_zayavka');
+    $('body').addClass('overflow-hidden');
+      $('html').addClass('overflow-hidden');
+      setTimeout(
+        function()
+        {
+         window.open('https://optima-st.ru/our-work/stoleshnicy', '_blank');
+        }, 5000)
+  });
+});
