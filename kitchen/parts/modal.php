@@ -35,7 +35,7 @@
 				Например, сможем <span class="modal__orange">стоимость вашего изделия с точностью 100% </span> 
 				или проконсультируем по выбору материалов и расскажем, на чем можно сэкономить без ущерба для качества.
 			</p>
-			<form class="modal-consultation__form modal-consultation__form2">
+			<form class="modal-consultation__form modal-consultation__form2 form">
 
 				<input type="hidden" name="subject" value="Заявка на консультацию с лендинга optima-st.ru">
 
@@ -46,8 +46,10 @@
 				<input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
 
 				<input type="hidden" name="vidform" value="бесплатная консультация">
-				<input type="hidden" name="formname" value="Бесплатная консультация"><!-- ROISTAT -->
-				<input type="tel" name="phone" class="modal-consultation__input modal__phone"  placeholder="+7 (___) ___ __ __" required>
+				<input type="hidden" name="formname" value="Бесплатная консультация">
+				<div class="relative">
+					<input type="tel" name="phone" class="modal-consultation__input modal__phone"  placeholder="+7 (___) ___ __ __" required>
+				</div>
 				<input type="submit" class="modal-consultation__button modal-consultation__submit" value="Получить консультацию">
 				<div class="modal__agreement modal-consultation__agreement">
 					<label for="modal-consultation__check " class="modal-consultation__check--label modal-consultation__check--active">
@@ -179,7 +181,7 @@
 					<p class="modal-free__subtext">Доступ к уникальному pdf-документу «5 фатальных ошибок при выборе кухни» откроется сразу после нажатия на кнопку «Забираю все бесплатно»
 					</p>
 				</div>
-				<form class="modal-consultation__form modal-free__form">
+				<form class="modal-consultation__form modal-free__form form">
 
 					<input type="hidden" name="subject" value="Расчет с лендинга optima-st.ru">
 
@@ -189,8 +191,10 @@
 					<input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>">
 					<input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
 
-					<input type="hidden" name="formname" value="Калькулятор"><!-- ROISTAT -->
-					<input type="tel" name="phone" class="modal-consultation__input modal__phone"  placeholder="+7 (___) ___ __ __" required>
+					<input type="hidden" name="formname" value="Калькулятор">
+					<div class="relative">
+						<input type="tel" name="phone" class="modal-consultation__input modal__phone"  placeholder="+7 (___) ___ __ __" required>
+					</div>
 					<input type="submit" class="modal-consultation__button" value="Забираю всё бесплатно">
 					<div class="modal__agreement modal-consultation__agreement">
 							<label for="modal-free__check1" class="modal-consultation__check--label modal-consultation__check--active">
@@ -248,7 +252,7 @@
 							на кнопку.</span>
 					</p>
 				</div>
-				<form class="modal-consultation__form modal-order__form">
+				<form class="modal-consultation__form modal-order__form form">
 
 					<input type="hidden" name="subject" value="Заявка на консультацию с лендинга optima-st.ru">
 
@@ -259,8 +263,10 @@
 					<input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
 
 					<input type="hidden" name="vidform" value="инженерная экспертиза">
-					<input type="hidden" name="formname" value="Инженерная экспертиза"><!-- ROISTAT -->
-					<input type="tel" class="modal-consultation__input modal-order__input modal__phone" id="order__phone" name="phone" placeholder="+7 (___) ___ __ __" required>
+					<input type="hidden" name="formname" value="Инженерная экспертиза">
+					<div class="relative">
+						<input type="tel" class="modal-consultation__input modal-order__input modal__phone" id="order__phone" name="phone" placeholder="+7 (___) ___ __ __" required>
+					</div>
 					<button class="modal-consultation__button modal-order__button" id="modal-order__submit">Заказать бесплатную экспертизу <br> и сэкономить до 100 000 руб.</button>
 					<div class="modal__agreement modal-consultation__agreement">
 							<label for="modal-free__check" class="modal-consultation__check--label modal-consultation__check--active">
@@ -316,7 +322,7 @@
 						Листайте с удовольствием <br>
 							на компьютере или телефоне.
 				</p>
-				<form class="modal-download__form modal-exit__form">
+				<form class="modal-download__form modal-exit__form form">
 
 					<input type="hidden" name="subject" value="Заявка на консультацию с лендинга optima-st.ru">
 
@@ -327,8 +333,10 @@
 					<input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
 
 					<input type="hidden" name="vidform" value="окно ухода с сайта">
-					<input type="hidden" name="formname" value="Останьтесь на минутку"><!-- ROISTAT -->
-					<input type="email" name="email" class="modal-download__email" placeholder="e-mail*" required>
+					<input type="hidden" name="formname" value="Останьтесь на минутку">
+					<div class="relative">
+						<input type="email" name="email" class="modal-download__email" placeholder="e-mail*" required>
+					</div>
 					<input type="submit" class="modal-download__btn" id="modal-exit__submit" value="Получить на почту">
 				</form>
 				<div class="modal__agreement modal-consultation__agreement modal-download__agreement">
