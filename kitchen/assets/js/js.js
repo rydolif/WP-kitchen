@@ -829,14 +829,7 @@ $(document).ready(function(){
   });
 
 
-  $(document).on('mouseleave',function(){
-    if (exit == true){
-    $('#modal-exit').show();
-    $('body').addClass('overflow-hidden');
-    $('html').addClass('overflow-hidden');
-    exit = false;
-    }
-  });
+
   
 
   
@@ -1106,5 +1099,16 @@ $('#review3')
     });
   }
 
+
+
 });
 
+
+$(document).on('mouseleave',function(){
+  if (exit == true){
+    $('#modal-exit').show();
+    $('body').addClass('overflow-hidden');
+    $('html').addClass('overflow-hidden');
+    exit = false;
+  }
+});

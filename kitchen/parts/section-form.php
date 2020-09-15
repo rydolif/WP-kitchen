@@ -4,7 +4,7 @@
 
 		<form action="" class="form section-form__container">
 
-			<input type="hidden" name="subject" value="Форма контактов">
+			<input type="hidden" name="subject" value="Заявка зафиксировать условия с лендинга optima-st.ru">
 
 			<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
 			<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">

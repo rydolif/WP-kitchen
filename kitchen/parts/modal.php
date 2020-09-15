@@ -1,3 +1,5 @@
+
+<!-- Консультация -->
 <div class="modal-consultation" id="modal-consultation">
 	<div class="modal modal-consultation__window">
 		<div class="modal-consultation__close" id="modal-consultation__close">
@@ -32,7 +34,7 @@
 				<span>Наш разговор ни к чему вас не обязывает.</span>  Мы вам оперативно перезвоним и 
 				ответим на любые вопросы. <br>
 				<br>
-				Например, сможем <span class="modal__orange">стоимость вашего изделия с точностью 100% </span> 
+				Например, сможем просчитать <span class="modal__orange">стоимость вашего изделия с точностью 100% </span> 
 				или проконсультируем по выбору материалов и расскажем, на чем можно сэкономить без ущерба для качества.
 			</p>
 			<form class="modal-consultation__form modal-consultation__form2 form">
@@ -63,8 +65,10 @@
 		</div>
 	</div>
 </div>
+<!-- Консультация конец -->
 
-<!-- <div class="modal-download relative" id="modal-download">
+<!-- на почту заказчика -->
+<div class="modal-download relative" id="modal-download">
 	<div class="modal modal-download__window">
 		<div class="modal-consultation__close modal-download__close" id="modal-download__close">
 				<i class="fas fa-times-circle"></i>
@@ -135,8 +139,10 @@
 				</div>
 		</div>
 	</div>
-</div> -->
+</div>
+<!-- на почту заказчика конец -->
 
+<!-- Калькулятор -->
 <div class="modal-consultation modal-free " id="modal-free">
 	<div class="modal modal-consultation__window modal-free__window" >
 			<div class="modal-consultation__close" id="modal-free__close">
@@ -166,6 +172,9 @@
 					</div>
 					<div class="modal-consultation__image">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/gift__slide12.jpg" alt="">
+					</div>
+					<div class="modal-consultation__image">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/gift__slide13.jpg" alt="">
 					</div>
 			</div>
 			<div class="modal-consultation__down modal-free__down relative">
@@ -208,6 +217,7 @@
 			</div>
 	</div>
 </div>
+<!-- Калькулятор конец -->
 
 <div class="modal modal-consultation modal-free modal-order" id="modal-order">
 	<div class="modal modal-consultation__window modal-order__window">
@@ -281,87 +291,75 @@
 	</div>
 </div>
 
-<div class="modal-download modal-exit relative" id="modal-exit">
-	<div class="modal modal-download__window">
-			<div class="modal-consultation__close modal-download__close" id="modal-exit__close">
-				<i class="fas fa-times-circle"></i>
-				<p class="modal__closetext">
-						<span>Я отказываюсь </span> от полезного <br>
-						материала и 100 000 руб.
-				</p>
+<!-- Виход за поле -->
+<div class="modal-consultation" id="modal-exit">
+	<div class="modal modal-consultation__window">
+		<div class="modal-consultation__close" id="modal-exit__close">
+			<i class="fas fa-times-circle"></i>
+			<p class="modal__closetext">
+					<span>Я не хочу </span> получить ответы
+					и подарки
+			</p>
+		</div>
+		<p class="modal__dont">
+			<span>Я не хочу </span> получить ответы <br>
+			и подарки
+		</p>
+		<h2 class="modal-consultation__title">
+			<span>Бесплатная.</span><br>
+			онлайн-консультация
+			по любому вопросу
+		</h2>
+		<div class="modal-consultation__images">
+			<div class="modal-consultation__image">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/modal2.jpg" alt="">
 			</div>
-			<div class="col-lf-12 col-xl-7">
-				<h2 class="modal-consultation__title">
-						ОСТАНЬТЕСЬ ВСЕГО <br> НА МИНУТКУ...
-				</h2>
-				<p class="modal-consultation__subtitle modal-download__subtitle">
-						и мы бесплатно отправим вам <br>
-						<span>уникальный pdf-документ</span>
-				</p>
-				<div class="modal-exit__grid">
-					<p class="modal-exit__text">
-							«5 фатальных ошибок при выборе кухни»
-					</p>
-					<div class="modal-exit__mac">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/modal-mac.png" alt="">
-					</div>
-					<div class="modal-exit__clip">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/modal-exit-clip.png" alt="">
-					</div>
-					<p class="modal-exit__text modal-exit__text2">
-							И подарим <span> 100 000 руб. </span> на шкафы купе
-							
-					</p>
+			<div class="modal-consultation__image">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/modal1.jpg" alt="">
+			</div>
+			<div class="modal-consultation__image">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/modal3.jpg" alt="">
+			</div>
+		</div>
+		<div class="modal-consultation__down modal-consultation__down--small">
+			<p class="modal-consultation__text">
+				<span>Наш разговор ни к чему вас не обязывает.</span>  Мы вам оперативно перезвоним и 
+				ответим на любые вопросы. <br>
+				<br>
+				Например, сможем просчитать <span class="modal__orange">стоимость вашего изделия с точностью 100% </span> 
+				или проконсультируем по выбору материалов и расскажем, на чем можно сэкономить без ущерба для качества.
+			</p>
+			<form class="modal-consultation__form modal-consultation__form2 form">
+
+				<input type="hidden" name="subject" value="Заявка на консультацию с лендинга optima-st.ru">
+
+				<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
+				<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
+				<input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>">
+				<input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>">
+				<input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
+
+				<input type="hidden" name="vidform" value="бесплатная консультация">
+				<input type="hidden" name="formname" value="Бесплатная консультация">
+				<div class="relative">
+					<input type="tel" name="phone" class="modal-consultation__input modal__phone"  placeholder="+7 (___) ___ __ __" required>
 				</div>
-			</div>
-			<div class="col-lg-12 col-xl-5 relative">
-				<p class="modal-consultation__text modal-exit__lighttext">
-						Отправим на почту <br>
-						<br>
-						<br>
-						Листайте с удовольствием <br>
-							на компьютере или телефоне.
-				</p>
-				<form class="modal-download__form modal-exit__form form">
-
-					<input type="hidden" name="subject" value="Заявка на консультацию с лендинга optima-st.ru">
-
-					<input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
-					<input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
-					<input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>">
-					<input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>">
-					<input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
-
-					<input type="hidden" name="vidform" value="окно ухода с сайта">
-					<input type="hidden" name="formname" value="Останьтесь на минутку">
-					<div class="relative">
-						<input type="email" name="email" class="modal-download__email" placeholder="e-mail*" required>
-					</div>
-					<input type="submit" class="modal-download__btn" id="modal-exit__submit" value="Получить на почту">
-				</form>
-				<div class="modal__agreement modal-consultation__agreement modal-download__agreement">
-					<label for="modal-download__check " class="modal-consultation__check--label modal-consultation__check--active">
-							<input type="checkbox" checked="checked" id="modal-download__check" class="modal-consultation__check">  
+				<input type="submit" class="modal-consultation__button modal-consultation__submit" value="Получить консультацию">
+				<div class="modal__agreement modal-consultation__agreement">
+					<label for="modal-consultation__check " class="modal-consultation__check--label modal-consultation__check--active">
+						<input type="checkbox" checked="checked" id="modal-consultation__check" class="modal-consultation__check">  
 					</label>
 					<p>
-							Я принимаю <a href="#"> условия пользовательского соглашения </a> и согласен на <a href="#"> обработку персональных данных </a>
+						Я принимаю <a href="#"> условия пользовательского соглашения </a> и согласен на <a href="#"> обработку персональных данных </a>
 					</p>
 				</div>
-				<div class="modal-download__social">
-					<a href="#" class="modal-download__viber">
-							<i class="fab fa-viber"></i>
-					</a>
-					<a href="#" class="modal-download__whatsapp">
-							<i class="fab fa-whatsapp-square"></i>
-					</a>
-					<a href="#" class="modal-download__telegramm">
-							<i class="fab fa-telegram-plane "></i>
-					</a>
-				</div>
-			</div>
+			</form>
+		</div>
 	</div>
 </div>
+<!-- Виход за поле конец -->
 
+<!-- Окна благодарности -->
 <div class="modal-redirect--wrapper" id="modal-redirect1">
 	<div class="modal-redirect relative">
 			<div class="modal-consultation__close modal-download__close" id="modal-redirect1__close">
@@ -429,6 +427,6 @@
 			</p>
 	</div>
 </div>
-
+<!-- Окна благодарности конец -->
 
 
