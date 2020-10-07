@@ -12,7 +12,7 @@
 									<?php the_field('statistics', 'option'); ?>
 							</p>
 							<p class="header__phone">
-									<a href="tel:<?php the_field('tel_url', 'option'); ?>" class="header__text-phone">
+									<a href="tel:<?php the_field('tel_url', 'option'); ?>" class="header__text-phone" onclick="ym(46484835,'reachGoal','tel')">
 										<?php the_field('tel', 'option'); ?>
 									</a>
 							</p>
@@ -38,14 +38,14 @@
 									<img src="<?php the_field('logo', 'option'); ?>" alt="">
 							</div>
 							<p class="header__text">
-									<a href="tel:<?php the_field('tel_url', 'option'); ?>" class="header__text-phone">
+									<a href="tel:<?php the_field('tel_url', 'option'); ?>" class="header__text-phone"  onclick="ym(46484835,'reachGoal','tel')">
 										<?php the_field('tel', 'option'); ?>
 									</a>
 									<br>
 									<span><?php the_field('statistics', 'option'); ?></span>
 							</p>
 							<p class="header__phone">
-									<a href="#" 
+									<a href="#">
 										<?php the_field('header_consultation_text', 'option'); ?>
 									</a>
 							</p>

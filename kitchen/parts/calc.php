@@ -180,7 +180,7 @@
 				<p class="calc__attraction">
 					<?php the_field('calc__attraction'); ?>
 				</p>
-				<button class="calc__button">
+				<button class="calc__button" onclick="ym(46484835,'reachGoal','hochu_click')">
 					<?php the_field('calc__btn'); ?>
 				</button>
 				<p class="calc__sub-button">

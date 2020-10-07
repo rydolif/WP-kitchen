@@ -55,7 +55,7 @@
 				<input type="submit" class="modal-consultation__button modal-consultation__submit" value="Получить консультацию">
 				<div class="modal__agreement modal-consultation__agreement">
 					<label for="modal-consultation__check " class="modal-consultation__check--label modal-consultation__check--active">
-						<input type="checkbox" checked="checked" id="modal-consultation__check" class="modal-consultation__check">  
+						<input type="checkbox" checked="checked" id="modal-consultation__check" class="modal-consultation__check" onclick="ym(46484835,'reachGoal','consult_zayavka')">  
 					</label>
 					<p>
 						Я принимаю <a href="#"> условия пользовательского соглашения </a> и согласен на <a href="#"> обработку персональных данных </a>
@@ -207,7 +207,7 @@
 					<input type="submit" class="modal-consultation__button" value="Забираю всё бесплатно">
 					<div class="modal__agreement modal-consultation__agreement">
 							<label for="modal-free__check1" class="modal-consultation__check--label modal-consultation__check--active">
-									<input type="checkbox" checked="checked" id="modal-free__check1" class="modal-consultation__check">  
+									<input type="checkbox" checked="checked" id="modal-free__check1" class="modal-consultation__check" onclick="ym(46484835,'reachGoal','hochu_zayavka')">  
 							</label>
 							<p>
 									Я принимаю <a href="#"> условия пользовательского соглашения </a> и согласен на <a href="#"> обработку персональных данных </a>
