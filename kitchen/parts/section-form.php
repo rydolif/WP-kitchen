@@ -23,7 +23,7 @@
 			</div>
 
 			<div class="section-form__block">
-				<button class="section-form__btn" onclick="ym(46484835,'reachGoal','fix_zayavka')">Зафиксировать условия</button>
+				<button class="section-form__btn" onclick="ga('send', 'event', 'fix', 'submit'); ym(46484835,'reachGoal','fix_zayavka'); return true;">Зафиксировать условия</button>
 			</div>
 		</form>
 

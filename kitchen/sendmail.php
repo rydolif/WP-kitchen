@@ -4,8 +4,8 @@
 
 	if ( isset($_POST) ) {
 
-		$to = 'hechashchina@yandex.ru';
-		// $to = 'zakaz@optima-st.ru, internet-mebel@cvt.ru, reception@cvt.ru';
+		// $to = 'hechashchina@yandex.ru';
+		$to = 'zakaz@optima-st.ru, internet-mebel@cvt.ru, reception@cvt.ru';
 
 		$subject = $_POST['subject'] ? htmlspecialchars(trim($_POST['subject'])) : '';
 		$description = $_POST['description'] ? htmlspecialchars(trim($_POST['description'])) : '';
